@@ -1,0 +1,15 @@
+# /hy-tmp/Lingshu-7B/covid_segmentation.yaml
+# 数据集根路径，指向我们刚刚准备好的数据
+path: /hy-tmp/Lingshu-7B/yolov8_segmentation_data
+
+# 训练集、验证集、测试集图片路径 (相对于 'path')
+train: train/images
+val: val/images
+test: test/images
+
+# 类别名称 (顺序必须与 CLASS_TO_ID 字典中的定义一致)
+names:
+  0: COVID
+  1: Lung_Opacity
+  2: Normal
+  3: Viral Pneumonia

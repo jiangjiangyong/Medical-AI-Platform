@@ -1,0 +1,59 @@
+# /hy-tmp/Lingshu-7B/.gitignore
+
+# Jupyter Notebook 检查点目录 (置于顶部，确保高优先级忽略)
+/.ipynb_checkpoints/
+**/.ipynb_checkpoints/ # ！！！新增：忽略所有子目录下的 .ipynb_checkpoints/ ！！！
+medical_knowledge_base/.ipynb_checkpoints/
+# Python 相关的忽略
+__pycache__/
+*.pyc
+*.pyd
+*.so
+.Python
+build/
+dist/
+venv/                  # 虚拟环境目录
+env/                   # 另一个常见的虚拟环境目录
+.pytest_cache/
+
+# 大型模型文件和下载的模型目录
+MiniCPM-2B-dpo-fp16/
+Qwen1.5-1.8B-Chat/
+TinyLlama-1.1B-Chat/
+embeddings/
+yolov8n-seg.pt
+yolov8_finetuned_seg.pt
+yolo11n.pt
+
+# 数据集和生成的数据
+COVID-19_Radiography_Dataset/
+yolov8_segmentation_data/
+chroma_db/
+uploads/
+reports.json
+metrics_history.csv
+minicpm_output/
+qwen_output/
+yolov8_output/
+runs/
+
+# 其他可能需要忽略的文件
+archive.zip
+data.yaml
+reports.txt
+
+# IDE 和编辑器相关的忽略
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 操作系统相关文件
+.DS_Store
+Thumbs.db
+
+# Node.js / Frontend 相关的忽略 (针对 my-ai-frontend 目录)
+my-ai-frontend/node_modules/
+my-ai-frontend/dist/
+npm-debug.log*
+yarn-debug.log*
