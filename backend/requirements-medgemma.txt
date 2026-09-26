@@ -1,0 +1,9 @@
+# The service is intentionally isolated from the platform API environment.
+# Install into the inference environment that already contains torch/cu121.
+transformers>=4.50,<5
+accelerate>=0.34
+bitsandbytes>=0.43
+fastapi>=0.110
+uvicorn>=0.30
+python-multipart>=0.0.9
+pillow>=10.0
